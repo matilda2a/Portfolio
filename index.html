@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eng.Matilda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body class="grid-pattern">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Custom Logo -->
+            <a href="#home" class="flex items-center space-x-2 text-2xl font-bold space-font text-white">
+                <span
+                    class="bg-indigo-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-xl shadow-lg">
+                    <i class="fas fa-code"></i>
+                </span>
+                <span class="text-indigo-500"></span><span class="text-slate-900 dark:text-white">Portfolio</span>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="flex items-center space-x-4">
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="nav-link text-slate-300 hover:text-white transition-colors active">HOME</a>
+                    <a href="#about" class="nav-link text-slate-300 hover:text-white transition-colors">ABOUT</a>
+                    <a href="#education"
+                        class="nav-link text-slate-300 hover:text-white transition-colors py-2">EDUCATION</a>
+                    <a href="#skills" class="nav-link text-slate-300 hover:text-white transition-colors py-2">SKILLS</a>
+                    <a href="#projects" class="nav-link text-slate-300 hover:text-white transition-colors">PROJECTS</a>
+                    <a href="#testimonials"
+                        class="nav-link text-slate-300 hover:text-white transition-colors">TESTIMONIALS</a>
+                    <a href="#contact" class="nav-link text-slate-300 hover:text-white transition-colors">CONTACT</a>
+                </div>
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="ml-4 text-slate-400 hover:text-indigo-500 transition-colors"
+                    title="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button class="md:hidden text-slate-300 focus:outline-none" id="menu-toggle" title="Toggle Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-slate-900 border-b border-slate-800" id="mobile-menu">
+            <div class="container mx-auto px-6 py-3 flex flex-col space-y-3">
+                <a href="#home" class="text-slate-300 hover:text-white transition-colors py-2">HOME</a>
+                <a href="#about" class="text-slate-300 hover:text-white transition-colors py-2">ABOUT</a>
+                <a href="#education" class="text-slate-300 hover:text-white transition-colors py-2">EDUCATION</a>
+                <a href="#skills" class="text-slate-300 hover:text-white transition-colors py-2">SKILLS</a>
+                <a href="#projects" class="text-slate-300 hover:text-white transition-colors py-2">PROJECTS</a>
+                <a href="#testimonials"
+                    class="nav-link text-slate-300 hover:text-white transition-colors">TESTIMONIALS</a>
+                <a href="#contact" class="text-slate-300 hover:text-white transition-colors py-2">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-16 relative">
+        <div class="container mx-auto px-6 py-16">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <div class="mb-4 inline-block">
+                        <span
+                            class="inline-block bg-indigo-500/20 text-indigo-600 px-3 py-2 rounded-full text-sm font-semibold tracking-wide">
+                            Frontend Developer
+                        </span>
+                    </div>
+
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 space-font">
+                        <span class="block">Hi, I'm</span>
+                        <span class="block text-indigo-500">Matilda Ashraf</span>
+                    </h1>
+
+                    <p class="text-slate-400 text-lg mb-8 max-w-lg">
+                        I craft beautiful, responsive, and user-friendly interfaces with modern frontend technologies.
+                        Turning designs into pixel-perfect, interactive experiences is my passion.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#projects" class="btn-primary px-8 py-3 rounded-md font-medium">
+                            View My Work
+                        </a>
+                        <a href="#contact" class="btn-outline px-8 py-3 rounded-md font-medium">
+                            Contact Me
+                        </a>
+                    </div>
+
+                    <div class="mt-10 flex items-center space-x-6">
+                        <a href="https://github.com/matilda2a" target="_blank" rel="noopener noreferrer"
+                            title="Visit my GitHub profile" class="social-icon text-slate-400 hover:text-indigo-500">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/matildaashraf" target="_blank" rel="noopener noreferrer"
+                            title="Visit my LinkedIn profile" class="social-icon text-slate-400 hover:text-indigo-500">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/matildaashraf?igsh=MXdwdDh1dXU0bWJ5dA==" target="_blank"
+                            rel="noopener noreferrer" title="Visit my Indtagram profile"
+                            class="social-icon text-slate-400 hover:text-indigo-500">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                        <a href="https://www.facebook.com/share/1A77eWEuQS/" target="_blank" rel="noopener noreferrer"
+                            title="Visit my Facebook profile" class="social-icon text-slate-400 hover:text-indigo-500">
+                            <i class="fab fa-facebook text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div
+                            class="w-56 h-96 md:w-64 md:h-[28rem] bg-indigo-500/20 flex items-center justify-center animate-float overflow-hidden rounded-xl shadow-lg">
+                            <div
+                                class="w-48 h-[22rem] md:w-56 md:h-[26rem] bg-slate-800 flex items-center justify-center overflow-hidden rounded-xl">
+                                <div class="image-box">
+                                    <img src="image/me.png" alt="profile" class="rounded-lg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="absolute -bottom-4 -right-4 w-24 h-24 rounded-lg bg-indigo-500/20 animate-float"
+                    style="animation-delay: 0.5s"></div>
+                <div class="absolute -top-4 -left-4 w-16 h-16 rounded-lg bg-indigo-500/20 animate-float"
+                    style="animation-delay: 1s"></div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-900/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 space-font">
+                    About <span class="text-indigo-500">Me</span>
+                </h2>
+                <div class="w-24 h-1 bg-indigo-500 mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h3 class="text-2xl font-bold mb-6 space-font text-indigo-500">My Journey</h3>
+
+                    <p class="text-slate-300 mb-4">
+                        I'm a passionate frontend developer with over 1 years of experience creating beautiful and
+                        functional user interfaces. My journey began with a fascination for how design and code come
+                        together to create engaging digital experiences.
+                    </p>
+
+                    <p class="text-slate-300 mb-4">
+                        I specialize in translating designs into pixel-perfect, responsive websites and applications. My
+                        expertise includes modern JavaScript frameworks, CSS architecture, animations, and accessibility
+                        best practices.
+                    </p>
+
+                    <p class="text-slate-300 mb-6">
+                        When I'm not coding, I enjoy exploring new design trends, contributing to open-source projects,
+                        and sharing my knowledge through blog posts and community events.
+                    </p>
+
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-3 py-1 bg-slate-800 text-indigo-400 rounded-full text-sm">Creative</span>
+                        <span class="px-3 py-1 bg-slate-800 text-indigo-400 rounded-full text-sm">Detail-Oriented</span>
+                        <span class="px-3 py-1 bg-slate-800 text-indigo-400 rounded-full text-sm">Problem Solver</span>
+                        <span class="px-3 py-1 bg-slate-800 text-indigo-400 rounded-full text-sm">UI Enthusiast</span>
+                    </div>
+                </div>
+                <!-- Cards -->
+                <div class="order-1 md:order-2">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div class="card p-6">
+                            <div class="text-4xl text-indigo-500 mb-4">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2 space-font">Clean Code</h4>
+                            <p class="text-slate-400">
+                                Writing maintainable, semantic, and well-structured code that's easy to understand and
+                                scale.
+                            </p>
+                        </div>
+
+                        <div class="card p-6">
+                            <div class="text-4xl text-indigo-500 mb-4">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2 space-font">UI Design</h4>
+                            <p class="text-slate-400">
+                                Creating visually appealing interfaces with attention to typography, color, and layout.
+                            </p>
+                        </div>
+
+                        <div class="card p-6">
+                            <div class="text-4xl text-indigo-500 mb-4">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2 space-font">Responsive</h4>
+                            <p class="text-slate-400">
+                                Building interfaces that work flawlessly across all devices and screen sizes.
+                            </p>
+                        </div>
+
+                        <div class="card p-6">
+                            <div class="text-4xl text-indigo-500 mb-4">
+                                <i class="fas fa-universal-access"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2 space-font">Accessible</h4>
+                            <p class="text-slate-400">
+                                Ensuring websites are usable by everyone, including people with disabilities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-slate-900/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 space-font">
+                    My <span class="text-indigo-500">Education</span>
+                </h2>
+                <div class="w-24 h-1 bg-indigo-500 mx-auto"></div>
+            </div>
+
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-slate-800 rounded-xl shadow-lg p-6 mb-6">
+                    <h3 class="text-2xl font-bold mb-2 space-font text-indigo-400">Bachelor of Computer Engineering</h3>
+                    <p class="text-slate-300 mb-2">
+                        Faculty of Engineering, Computer & Systems Engineering Department
+                    </p>
+                    <p class="text-slate-400">
+                        Fourth Year Student (2021 - 2026)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-slate-900/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 space-font">
+                    My <span class="text-indigo-500">Skills</span>
+                </h2>
+                <div class="w-24 h-1 bg-indigo-500 mx-auto"></div>
+                <p class="mt-4 text-slate-400 max-w-2xl mx-auto">
+                    I've mastered a variety of frontend technologies and tools to create exceptional user experiences.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="card p-8">
+                    <h3 class="text-2xl font-bold mb-6 space-font text-indigo-500">Frontend Technologies</h3>
+
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-slate-300">HTML5 & CSS3</span>
+                                <span class="text-indigo-500">95%</span>
+                            </div>
+                            <div class="progress-bar rounded-full">
+                                <div class="progress rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-slate-300">JavaScript / ES6+</span>
+                                <span class="text-indigo-500">90%</span>
+                            </div>
+                            <div class="progress-bar rounded-full">
+                                <div class="progress rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-slate-300">CSS Frameworks (Tailwind, Bootstrap)</span>
+                                <span class="text-indigo-500">90%</span>
+                            </div>
+                            <div class="progress-bar rounded-full">
+                                <div class="progress rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-slate-300">CSS Preprocessors (SASS)</span>
+                                <span class="text-indigo-500">85%</span>
+                            </div>
+                            <div class="progress-bar rounded-full">
+                                <div class="progress rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-slate-300">Responsive Web Design</span>
+                                <span class="text-indigo-500">95%</span>
+                            </div>
+                            <div class="progress-bar rounded-full">
+                                <div class="progress rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card p-8 mb-8">
+                        <h3 class="text-2xl font-bold mb-6 space-font text-indigo-500">Tools & Frameworks</h3>
+
+                        <div class="grid grid-cols-3 sm:grid-cols-4 gap-6">
+                            <div class="tech-icon flex flex-col items-center p-4 bg-slate-800 rounded-lg">
+                                <i class="fab fa-js text-3xl text-indigo-500 mb-2"></i>
+                                <span class="text-slate-300 text-sm">JavaScript</span>
+                            </div>
+
+                            <div class="tech-icon flex flex-col items-center p-4 bg-slate-800 rounded-lg">
+                                <i class="fab fa-html5 text-3xl text-indigo-500 mb-2"></i>
+                                <span class="text-slate-300 text-sm">HTML5</span>
+                            </div>
+
+                            <div class="tech-icon flex flex-col items-center p-4 bg-slate-800 rounded-lg">
+                                <i class="fab fa-css3-alt text-3xl text-indigo-500 mb-2"></i>
+                                <span class="text-slate-300 text-sm">CSS3</span>
+                            </div>
+
+                            <div class="tech-icon flex flex-col items-center p-4 bg-slate-800 rounded-lg">
+                                <i class="fab fa-sass text-3xl text-indigo-500 mb-2"></i>
+                                <span class="text-slate-300 text-sm">Sass</span>
+                            </div>
+
+                            <div class="tech-icon flex flex-col items-center p-4 bg-slate-800 rounded-lg">
+                                <i class="fab fa-git-alt text-3xl text-indigo-500 mb-2"></i>
+                                <span class="text-slate-300 text-sm">Git</span>
+                            </div>
+
+                            <div class="tech-icon flex flex-col items-center p-4 bg-slate-800 rounded-lg">
+                                <i class="fab fa-figma text-3xl text-indigo-500 mb-2"></i>
+                                <span class="text-slate-300 text-sm">Figma</span>
+                            </div>
+
+                            <div class="tech-icon flex flex-col items-center p-4 bg-slate-800 rounded-lg">
+                                <i class="fas fa-cube text-3xl text-indigo-500 mb-2"></i>
+                                <span class="text-slate-300 text-sm">Webpack</span>
+                            </div>
+
+                            <div class="tech-icon flex flex-col items-center p-4 bg-slate-800 rounded-lg">
+                                <i class="fab fa-github text-3xl text-indigo-500 mb-2"></i>
+                                <span class="text-slate-300 text-sm">GitHub</span>
+                            </div>
+
+                            <div class="tech-icon flex flex-col items-center p-4 bg-slate-800 rounded-lg">
+                                <i class="fab fa-react text-3xl text-indigo-500 mb-2"></i>
+                                <span class="text-slate-300 text-sm">React</span>
+                            </div>
+
+                            <div class="tech-icon flex flex-col items-center p-4 bg-slate-800 rounded-lg">
+                                <i class="fab fa-vuejs text-3xl text-indigo-500 mb-2"></i>
+                                <span class="text-slate-300 text-sm">Vue.js</span>
+                            </div>
+
+
+                            <div class="tech-icon flex flex-col items-center p-4 bg-slate-800 rounded-lg">
+                                <i class="fab fa-bootstrap text-3xl text-indigo-500 mb-2"></i>
+                                <span class="text-slate-300 text-sm">Bootstrap</span>
+                            </div>
+
+                            <div class="tech-icon flex flex-col items-center p-4 bg-slate-800 rounded-lg">
+                                <i class="fab fa-node-js text-3xl text-indigo-500 mb-2"></i>
+                                <span class="text-slate-300 text-sm">Node.js</span>
+                            </div>
+
+                            <div class="tech-icon flex flex-col items-center p-4 bg-slate-800 rounded-lg">
+                                <i class="fas fa-wind text-3xl text-indigo-500 mb-2"></i>
+                                <span class="text-slate-300 text-sm">Tailwind CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card p-8">
+                        <h3 class="text-2xl font-bold mb-6 space-font text-indigo-500">Additional Skills</h3>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="flex items-center p-4 bg-slate-800 rounded-lg">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center mr-4">
+                                    <i class="fas fa-mobile-alt text-indigo-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-white">Responsive Design</h4>
+                                    <p class="text-sm text-slate-400">Mobile-first approach</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center p-4 bg-slate-800 rounded-lg">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center mr-4">
+                                    <i class="fas fa-universal-access text-indigo-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-white">Web Accessibility</h4>
+                                    <p class="text-sm text-slate-400">WCAG compliance</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center p-4 bg-slate-800 rounded-lg">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center mr-4">
+                                    <i class="fas fa-tachometer-alt text-indigo-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-white">Performance Optimization</h4>
+                                    <p class="text-sm text-slate-400">Fast loading times</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center p-4 bg-slate-800 rounded-lg">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center mr-4">
+                                    <i class="fas fa-search text-indigo-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-white">SEO Fundamentals</h4>
+                                    <p class="text-sm text-slate-400">Search engine friendly</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center p-4 bg-slate-800 rounded-lg">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center mr-4">
+                                    <i class="fas fa-paint-brush text-indigo-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-white">UI/UX Principles</h4>
+                                    <p class="text-sm text-slate-400">User-centered design</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center p-4 bg-slate-800 rounded-lg">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center mr-4">
+                                    <i class="fas fa-code-branch text-indigo-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-white">Version Control</h4>
+                                    <p class="text-sm text-slate-400">Git workflow mastery</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Section -->
+    <section id="volunteer" class="py-20 bg-slate-800/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 space-font text-indigo-400">
+                    Volunteer <span class="text-indigo-500">Experience</span>
+                </h2>
+                <div class="w-24 h-1 bg-indigo-500 mx-auto"></div>
+            </div>
+
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+                <!-- Text Content -->
+                <div class="bg-slate-900 rounded-xl shadow-lg p-6 md:p-8">
+                    <h3 class="text-2xl font-semibold mb-2 text-indigo-400 space-font">IEEE Zagazig Student Branch</h3>
+                    <p class="text-slate-300 mb-2 italic text-sm">
+                        Brand Ambassadors Program | April – September 2025
+                    </p>
+                    <p class="text-slate-300 leading-relaxed">
+                        I successfully completed the Brand Ambassadors Program at IEEE Zagazig Student Branch.
+                        Throughout the program,
+                        I participated in sessions and tasks focused on presentation, communication, personal branding,
+                        and technical skills
+                        as part of a specialized team. This experience helped me grow personally and professionally
+                        while contributing to team activities.
+                    </p>
+                </div>
+
+                <!-- Certificate Image -->
+                <div class="rounded-xl overflow-hidden shadow-lg">
+                    <img src="image/IEEE.png" alt="IEEE Certificate"
+                        class="w-full h-auto rounded-lg border border-slate-700">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 space-font">Services</h2>
+                <div class="w-24 h-1 bg-indigo-500 mx-auto"></div>
+                <p class="mt-4 text-slate-400 max-w-2xl mx-auto">What I can do for you. Choose a plan that fits your
+                    needs.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Web Development Card -->
+                <div
+                    class="card p-8 text-center bg-slate-800 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex justify-center mb-4">
+                        <span class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-indigo-600/10">
+                            <i class="fas fa-laptop-code text-2xl text-indigo-600"></i>
+                        </span>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2 text-white">Web Development</h3>
+                    <p class="text-slate-400 mb-4 text-base">Modern, responsive websites and web apps.</p>
+                    <div class="text-2xl font-bold text-indigo-500 mb-4">$500+</div>
+                    <a href="#contact"
+                        class="w-full inline-block py-2 rounded-md font-semibold bg-indigo-600 text-white hover:bg-indigo-700 transition">Start
+                        Project</a>
+                </div>
+                <!-- UI/UX Design Card -->
+                <div
+                    class="card p-8 text-center bg-slate-800 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex justify-center mb-4">
+                        <span class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-indigo-600/10">
+                            <i class="fas fa-paint-brush text-2xl text-indigo-600"></i>
+                        </span>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2 text-white">UI/UX Design</h3>
+                    <p class="text-slate-400 mb-4 text-base">Beautiful, user-friendly interface design.</p>
+                    <div class="text-2xl font-bold text-indigo-500 mb-4">$300+</div>
+                    <a href="#contact"
+                        class="w-full inline-block py-2 rounded-md font-semibold bg-indigo-600 text-white hover:bg-indigo-700 transition">Start
+                        Project</a>
+                </div>
+                <!-- SEO Optimization Card -->
+                <div
+                    class="card p-8 text-center bg-slate-800 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex justify-center mb-4">
+                        <span class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-indigo-600/10">
+                            <i class="fas fa-search text-2xl text-indigo-600"></i>
+                        </span>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2 text-white">SEO Optimization</h3>
+                    <p class="text-slate-400 mb-4 text-base">Improve your site's visibility and ranking.</p>
+                    <div class="text-2xl font-bold text-indigo-500 mb-4">$200+</div>
+                    <a href="#contact"
+                        class="w-full inline-block py-2 rounded-md font-semibold bg-indigo-600 text-white hover:bg-indigo-700 transition">Start
+                        Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 space-font">
+                    My <span class="text-indigo-500">Projects</span>
+                </h2>
+                <div class="w-24 h-1 bg-indigo-500 mx-auto"></div>
+                <p class="mt-4 text-slate-400 max-w-2xl mx-auto">
+                    Here's a selection of my recent frontend projects. Each one demonstrates my skills in creating
+                    beautiful, functional, and responsive user interfaces.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="card project-card">
+                    <div class="h-56 bg-slate-800 relative overflow-hidden">
+                        <svg class="absolute inset-0 w-full h-full text-indigo-500/10"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <path d="M0,0 L100,0 L100,100 L0,100 Z" fill="currentColor"></path>
+                            <path d="M0,0 L100,0 L50,100 Z" fill="currentColor" opacity="0.5"></path>
+                            <path d="M0,0 L100,100 L0,100 Z" fill="currentColor" opacity="0.3"></path>
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <video class="w-full h-full object-cover" autoplay muted loop>
+                                <source src="image/web.mp4" type="video/mp4">
+                            </video>
+
+                        </div>
+                        <div class="project-overlay p-6">
+                            <h3 class="text-xl font-bold space-font text-white mb-2">Glow Secret</h3>
+                            <p class="text-slate-300 mb-4 text-center">My Front-End Development Summer Training at the
+                                (ITI), I had the opportunity to work on a final project
+                                This project not only challenged me but also helped me refine my technical.</p>
+                            <div class="flex space-x-3">
+                                <a href="https:" target="_blank" rel="noopener noreferrer"
+                                    class="text-indigo-500 hover:text-indigo-400 transition-colors">
+                                    <i class="fas fa-external-link-alt mr-1"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/matilda2a/Final-Project" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="text-indigo-500 hover:text-indigo-400 transition-colors">
+                                    <i class="fab fa-github mr-1"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold space-font text-white mb-2">Glow Secret</h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-slate-800 text-xs rounded-md text-slate-300">React</span>
+                            <span class="px-2 py-1 bg-slate-800 text-xs rounded-md text-slate-300">Bootstrap</span>
+                            <span class="px-2 py-1 bg-slate-800 text-xs rounded-md text-slate-300">css3</span>
+                            <span class="px-2 py-1 bg-slate-800 text-xs rounded-md text-slate-300">HTML5</span>
+                            <span class="px-2 py-1 bg-slate-800 text-xs rounded-md text-slate-300">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card project-card w-full">
+                    <div class="h-56 bg-slate-800 relative overflow-hidden">
+                        <svg class="absolute inset-0 w-full h-full text-indigo-500/10"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <path d="M0,0 L100,0 L100,100 L0,100 Z" fill="currentColor"></path>
+                            <circle cx="50" cy="50" r="30" fill="currentColor" opacity="0.5"></circle>
+                            <circle cx="70" cy="30" r="20" fill="currentColor" opacity="0.3"></circle>
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <img src="image/dashboard.png" alt="dashboard" class="w-full h-full object-cover">
+                        </div>
+                        <div class="project-overlay p-6">
+                            <h3 class="text-xl font-bold space-font text-white mb-2">Analytics Dashboard</h3>
+                            <p class="text-slate-300 mb-4 text-center">An interactive dashboard with data visualization,
+                                filtering options, and customizable widgets.</p>
+                            <div class="flex space-x-3">
+                                <a href="https:/" target="_blank" rel="noopener noreferrer"
+                                    title="Visit my GitHub profile"
+                                    class="text-indigo-500 hover:text-indigo-400 transition-colors">
+                                    <i class="fas fa-external-link-alt mr-1"></i> Live Demo
+                                </a>
+                                <a href="https:" target="_blank" rel="noopener noreferrer"
+                                    title="Visit my GitHub profile"
+                                    class="text-indigo-500 hover:text-indigo-400 transition-colors">
+                                    <i class="fab fa-github mr-1"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold space-font text-white mb-2">Analytics Dashboard</h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-slate-800 text-xs rounded-md text-slate-300">HTML5</span>
+                            <span class="px-2 py-1 bg-slate-800 text-xs rounded-md text-slate-300">CSS3</span>
+                            <span class="px-2 py-1 bg-slate-800 text-xs rounded-md text-slate-300">SCSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card project-card">
+                    <div class="h-56 bg-slate-800 relative overflow-hidden">
+                        <svg class="absolute inset-0 w-full h-full text-indigo-500/10"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <path d="M0,0 L100,0 L100,100 L0,100 Z" fill="currentColor"></path>
+                            <path d="M0,50 Q25,25 50,50 T100,50" stroke="currentColor" stroke-width="5" fill="none"
+                                opacity="0.5"></path>
+                            <path d="M0,70 Q25,45 50,70 T100,70" stroke="currentColor" stroke-width="5" fill="none"
+                                opacity="0.3"></path>
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <video class="w-full h-full object-cover" autoplay muted loop>
+                                <source src="image/Recording2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="project-overlay p-6">
+                            <h3 class="text-xl font-bold space-font text-white mb-2">E-commerce</h3>
+                            <p class="text-slate-300 mb-4 text-center">Implemented dynamic product cards, integrated a
+                                shopping cart, and ensured smooth navigation and interaction throughout the website.
+                                Focused on enhancing the overall user experience and maintaining a consistent design
+                                theme.</p>
+                            <div class="flex space-x-3">
+                                <a href="https://geniupp/" target="_blank" rel="noopener noreferrer"
+                                    class="text-indigo-500 hover:text-indigo-400 transition-colors">
+                                    <i class="fas fa-external-link-alt mr-1"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/matilda2a/final-project-" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="text-indigo-500 hover:text-indigo-400 transition-colors">
+                                    <i class="fab fa-github mr-1"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold space-font text-white mb-2">E-commerce</h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-slate-800 text-xs rounded-md text-slate-300">React</span>
+                            <span class="px-2 py-1 bg-slate-800 text-xs rounded-md text-slate-300">Styled
+                                Components</span>
+                            <span class="px-2 py-1 bg-slate-800 text-xs rounded-md text-slate-300">Framer Motion</span>
+                            <span class="px-2 py-1 bg-slate-800 text-xs rounded-md text-slate-300">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="card project-card">
+                    <div class="h-56 bg-slate-800 relative overflow-hidden">
+                        <svg class="absolute inset-0 w-full h-full text-indigo-500/10"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <path d="M0,0 L100,0 L100,100 L0,100 Z" fill="currentColor"></path>
+                            <rect x="20" y="20" width="60" height="60" rx="5" fill="currentColor" opacity="0.5"></rect>
+                            <rect x="30" y="30" width="40" height="40" rx="5" fill="currentColor" opacity="0.3"></rect>
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <img src="image/flyo.jpg" alt="dashboard" class="w-full h-full object-cover">
+
+                        </div>
+                        <div class="project-overlay p-6">
+                            <h3 class="text-xl font-bold space-font text-white mb-2">Fylo Dark Theme Landing Page</h3>
+                            <p class="text-slate-300 mb-4 text-center">Replaced static images in the project cards with
+                                videos to make the interface more dynamic and engaging. Ensured that the videos
+                                autoplay, are muted, loop continuously, and maintain the layout and dark theme styling
+                                of the original design.</p>
+                            <div class="flex space-x-3">
+                                <a href="https:" target="_blank" rel="noopener noreferrer"
+                                    class="text-indigo-500 hover:text-indigo-400 transition-colors">
+                                    <i class="fas fa-external-link-alt mr-1"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/matilda2a/IEEE-CS-25-Frontend/tree/main/HTML/Task10/fylo-dark-theme-landing-page-master"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="text-indigo-500 hover:text-indigo-400 transition-colors">
+                                    <i class="fab fa-github mr-1"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold space-font text-white mb-2">Fylo Dark Theme Landing Page</h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-slate-800 text-xs rounded-md text-slate-300">React</span>
+                            <span class="px-2 py-1 bg-slate-800 text-xs rounded-md text-slate-300">Storybook</span>
+                            <span class="px-2 py-1 bg-slate-800 text-xs rounded-md text-slate-300">CSS Modules</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="card project-card">
+                    <div class="h-56 bg-slate-800 relative overflow-hidden">
+                        <svg class="absolute inset-0 w-full h-full text-indigo-500/10"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <path d="M0,0 L100,0 L100,100 L0,100 Z" fill="currentColor"></path>
+                            <path d="M20,20 L80,20 L80,80 L20,80 Z" fill="currentColor" opacity="0.5"></path>
+                            <path d="M35,35 L65,35 L65,65 L35,65 Z" fill="currentColor" opacity="0.3"></path>
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <img src="image/TimeDashboard.jpg" alt="dashboard" class="w-full h-full object-cover">
+
+                        </div>
+                        <div class="project-overlay p-6">
+                            <h3 class="text-xl font-bold space-font text-white mb-2">time-tracking-dashboard-main</h3>
+                            <p class="text-slate-300 mb-4 text-center">Implemented dynamic activity cards showing daily,
+                                weekly, and monthly tracked hours. Ensured proper layout, styling, and usability for
+                                better user experience across different devices.</p>
+                            <div class="flex space-x-3">
+                                <a href="https:" target="_blank" rel="noopener noreferrer"
+                                    class="text-indigo-500 hover:text-indigo-400 transition-colors">
+                                    <i class="fas fa-external-link-alt mr-1"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/matilda2a/IEEE-CS-25-Frontend/tree/main/HTML/Task10/time-tracking-dashboard-main"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="text-indigo-500 hover:text-indigo-400 transition-colors">
+                                    <i class="fab fa-github mr-1"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold space-font text-white mb-2">time-tracking-dashboard-main</h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-slate-800 text-xs rounded-md text-slate-300">Angular</span>
+                            <span class="px-2 py-1 bg-slate-800 text-xs rounded-md text-slate-300">css</span>
+                            <span class="px-2 py-1 bg-slate-800 text-xs rounded-md text-slate-300">SCSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="card project-card">
+                    <div class="h-56 bg-slate-800 relative overflow-hidden">
+                        <svg class="absolute inset-0 w-full h-full text-indigo-500/10"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <path d="M0,0 L100,0 L100,100 L0,100 Z" fill="currentColor"></path>
+                            <path d="M50,20 L80,50 L50,80 L20,50 Z" fill="currentColor" opacity="0.5"></path>
+                            <circle cx="50" cy="50" r="15" fill="currentColor" opacity="0.3"></circle>
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <img src="image/interactive-card.jpg" alt="dashboard" class="w-full h-full object-cover">
+                        </div>
+                        <div class="project-overlay p-6">
+                            <h3 class="text-xl font-bold space-font text-white mb-2">Interactive Card Details Forms on
+                                the card display
+                                as the user types, added input validation for card number, expiry date, and CVV, and
+                                ensured a visually appealing and user-friendly interface.</p>
+                                <div class="flex space-x-3">
+                                    <a href="https://" target="_blank" rel="noopener noreferrer"
+                                        class="text-indigo-500 hover:text-indigo-400 transition-colors">
+                                        <i class="fas fa-external-link-alt mr-1"></i> Live Demo
+                                    </a>
+                                    <a href="https://github.com/matilda2a/IEEE-CS-25-Frontend/tree/main/HTML/Task9/interactive-card-details-form-main"
+                                        class="text-indigo-500 hover:text-indigo-400 transition-colors">
+                                        <i class="fab fa-github mr-1"></i> Source Code
+                                    </a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold space-font text-white mb-2">Interactive Card Details Form</h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-slate-800 text-xs rounded-md text-slate-300">Vue.js</span>
+                            <span class="px-2 py-1 bg-slate-800 text-xs rounded-md text-slate-300">Vuex</span>
+                            <span class="px-2 py-1 bg-slate-800 text-xs rounded-md text-slate-300">Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#" class="btn-primary px-8 py-3 rounded-md font-medium inline-flex items-center">
+                    View All Projects
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Case Study Modal (hidden by default) -->
+    <div id="case-study-modal"
+        class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
+        <div class="bg-slate-900 text-white p-8 rounded-xl w-full max-w-2xl relative">
+            <button onclick="document.getElementById('case-study-modal').classList.add('hidden')"
+                class="absolute top-4 right-4 text-slate-400 hover:text-indigo-500" title="Close Case Study"><i
+                    class="fas fa-times"></i></button>
+            <h3 class="text-2xl font-bold mb-4">Project Case Study</h3>
+            <p class="mb-2 text-indigo-400">Before/After Comparison</p>
+            <div class="flex gap-4 mb-4">
+                <img src="https://via.placeholder.com/150x100?text=Before" alt="Before" class="rounded-lg w-1/2">
+                <img src="https://via.placeholder.com/150x100?text=After" alt="After" class="rounded-lg w-1/2">
+            </div>
+            <p class="mb-2">Challenges: <span class="text-slate-300">Describe the main challenges here.</span></p>
+            <p class="mb-2">Solutions: <span class="text-slate-300">Describe the solutions here.</span></p>
+            <p class="mb-2">Results: <span class="text-slate-300">Share metrics or outcomes here.</span></p>
+        </div>
+    </div>
+
+    <!-- Blog/Articles Section -->
+    <section id="blog" class="py-20 bg-slate-900/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 space-font">
+                    Blog & Articles
+                </h2>
+                <div class="w-24 h-1 bg-indigo-500 mx-auto"></div>
+                <p class="mt-4 text-slate-400 max-w-2xl mx-auto">
+                    Sharing tutorials, case studies, and insights about frontend development.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="card p-6">
+                    <header class="mb-4">
+                        <h3 class="text-xl font-bold space-font text-white mb-2">How to Build a Responsive Navbar</h3>
+                        <time class="text-xs text-slate-400">May 2024</time>
+                    </header>
+                    <p class="text-slate-300 mb-4">A step-by-step guide to creating a modern, responsive navigation bar
+                        using HTML, CSS, and JavaScript.</p>
+                    <a href="#" class="text-indigo-500 hover:underline">Read More</a>
+                </article>
+                <article class="card p-6">
+                    <header class="mb-4">
+                        <h3 class="text-xl font-bold space-font text-white mb-2">CSS Grid vs Flexbox: When to Use Which?
+                        </h3>
+                        <time class="text-xs text-slate-400">April 2024</time>
+                    </header>
+                    <p class="text-slate-300 mb-4">An in-depth comparison of CSS Grid and Flexbox, with practical
+                        examples and use cases.</p>
+                    <a href="#" class="text-indigo-500 hover:underline">Read More</a>
+                </article>
+                <article class="card p-6">
+                    <header class="mb-4">
+                        <h3 class="text-xl font-bold space-font text-white mb-2">Improving Web Accessibility</h3>
+                        <time class="text-xs text-slate-400">March 2024</time>
+                    </header>
+                    <p class="text-slate-300 mb-4">Tips and best practices for making your websites accessible to
+                        everyone.</p>
+                    <a href="#" class="text-indigo-500 hover:underline">Read More</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 space-font">
+                    Testimonials
+                </h2>
+                <div class="w-24 h-1 bg-indigo-500 mx-auto"></div>
+                <p class="mt-4 text-slate-400 max-w-2xl mx-auto">
+                    What clients and colleagues say about working with me.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <img src="image/sara.png" alt="Client Photo" class="w-16 h-16 rounded-full mb-4">
+                    <blockquote class="text-slate-300 mb-4">"Matilda is a talented developer who delivers high-quality
+                        work on time. Highly recommended!"</blockquote>
+                    <div class="flex items-center mb-2">
+                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="text-indigo-500 font-bold">Sara Emil</div>
+                    <div class="text-slate-400 text-sm">CEO, ExampleCorp</div>
+                </div>
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <img src="image/mariam.png" alt="Client Photo" class="w-16 h-16 rounded-full mb-4">
+                    <blockquote class="text-slate-300 mb-4">"Matilda's attention to detail and technical expertise made
+                        a huge difference in our project's success."</blockquote>
+                    <div class="flex items-center mb-2">
+                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="text-indigo-500 font-bold">Mariam Farouk</div>
+                    <div class="text-slate-400 text-sm">App Developer</div>
+                </div>
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <img src="image/nada.png" alt="Client Photo" class="w-16 h-16 rounded-full mb-4">
+                    <blockquote class="text-slate-300 mb-4">"Great communicator and problem solver. The project exceeded
+                        our expectations!"</blockquote>
+                    <div class="flex items-center mb-2">
+                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                        <span class="text-yellow-400"><i class="fas fa-star-half-alt"></i></span>
+                    </div>
+                    <div class="text-indigo-500 font-bold">Nada Alaa</div>
+                    <div class="text-slate-400 text-sm">Full-Stack Developer</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Resume/CV Section
+    <section id="resume" class="py-20 bg-slate-900/50">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-indigo-500">Work Experience</h3>
+                    <ul class="border-l-2 border-indigo-500 pl-6">
+                        <li class="mb-8">
+                            <div class="text-slate-300 font-semibold">Frontend Developer</div>
+                            <div class="text-slate-400 text-sm mb-1">Tech Solutions Inc. | 2023 - Present</div>
+                            <div class="text-slate-500 text-xs">Developed modern web apps using React and Tailwind CSS.
+                            </div>
+                        </li>
+                        <li class="mb-8">
+                            <div class="text-slate-300 font-semibold">Web Designer</div>
+                            <div class="text-slate-400 text-sm mb-1">Creative Studio | 2022 - 2023</div>
+                            <div class="text-slate-500 text-xs">Designed and built responsive websites for clients.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="text-slate-300 font-semibold">Intern</div>
+                            <div class="text-slate-400 text-sm mb-1">Startup Hub | 2021 - 2022</div>
+                            <div class="text-slate-500 text-xs">Assisted in frontend development and UI/UX design.</div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-indigo-500">Skills</h3>
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-slate-300">JavaScript</span>
+                            <span class="text-indigo-500">90%</span>
+                        </div>
+                        <div class="progress-bar rounded-full">
+                            <div class="progress rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-slate-300">React</span>
+                            <span class="text-indigo-500">85%</span>
+                        </div>
+                        <div class="progress-bar rounded-full">
+                            <div class="progress rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-slate-300">CSS / Tailwind</span>
+                            <span class="text-indigo-500">95%</span>
+                        </div>
+                        <div class="progress-bar rounded-full">
+                            <div class="progress rounded-full" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-slate-300">UI/UX Design</span>
+                            <span class="text-indigo-500">80%</span>
+                        </div>
+                        <div class="progress-bar rounded-full">
+                            <div class="progress rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 space-font">
+                    Get In <span class="text-indigo-500">Touch</span>
+                </h2>
+                <div class="w-24 h-1 bg-indigo-500 mx-auto"></div>
+                <p class="mt-4 text-slate-400 max-w-2xl mx-auto">
+                    Have a project in mind or want to discuss potential opportunities? I'd love to hear from you!
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="card p-8">
+                    <h3 class="text-2xl font-bold mb-6 text-indigo-500">Contact Information</h3>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 rounded-lg bg-indigo-500/20 flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-indigo-500"></i>
+                            </div>
+                            <div>
+                                <p class="text-slate-400 text-sm mb-1">Email</p>
+                                <p class="text-white">matkda.ashrafmalak@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 rounded-lg bg-indigo-500/20 flex items-center justify-center mr-4">
+                                <i class="fas fa-phone text-indigo-500"></i>
+                            </div>
+                            <div>
+                                <p class="text-slate-400 text-sm mb-1">Phone</p>
+                                <p class="text-white">+20 1200010382</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 rounded-lg bg-indigo-500/20 flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-indigo-500"></i>
+                            </div>
+                            <div>
+                                <p class="text-slate-400 text-sm mb-1">Location</p>
+                                <p class="text-white">Sharqia, Zagazig</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <h4 class="text-xl font-bold mb-4 text-white">Connect With Me</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/matilda2a" target="_blank" rel="noopener noreferrer"
+                                title="Visit my GitHub profile"
+                                class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center">
+                                <i class="fab fa-github text-slate-400"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/matildaashraf" target="_blank"
+                                rel="noopener noreferrer" title="Visit my LinkedIn profile"
+                                class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center">
+                                <i class="fab fa-linkedin text-slate-400"></i>
+                            </a>
+                            <a href="https://www.instagram.com/matildaashraf?igsh=MXdwdDh1dXU0bWJ5dA==" target="_blank"
+                                rel="noopener noreferrer" title="Visit my Instagram profile"
+                                class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center">
+                                <i class="fab fa-instagram text-slate-400"></i>
+                            </a>
+                            <a href="https://www.facebook.com/share/1A77eWEuQS/" target="_blank"
+                                rel="noopener noreferrer" title="Visit my Facebook profile"
+                                class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center">
+                                <i class="fab fa-facebook text-slate-400"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <h4 class="text-xl font-bold mb-4 text-white">Subscribe to My Newsletter</h4>
+                        <p class="text-slate-400 mb-4">Get the latest updates on my projects, articles, and frontend
+                            tips. No spam, just value!</p>
+                        <form class="flex flex-col sm:flex-row gap-4">
+                            <input type="email" placeholder="Your Email"
+                                class="contact-input px-4 py-3 rounded-lg w-full" required>
+                            <button type="submit"
+                                class="btn-primary px-8 py-3 rounded-lg font-medium whitespace-nowrap">Subscribe</button>
+                        </form>
+                    </div>
+
+                    <div class="mt-8 p-6 bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-bold mb-4 text-white">Availability</h4>
+                        <p class="text-slate-300 mb-2">
+                            I'm currently available for freelance work and open to discussing new opportunities.
+                        </p>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-green-500 mr-2"></div>
+                            <span class="text-green-400 text-sm">Available for new projects</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="card p-8">
+                    <h3 class="text-2xl font-bold mb-6 text-indigo-500">Send Me a Message</h3>
+
+                    <form id="contact-form" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-slate-400 mb-2">Name</label>
+                            <input type="text" id="name" name="from_name"
+                                class="contact-input w-full px-4 py-3 rounded-lg" placeholder="Your Name">
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-slate-400 mb-2">Email</label>
+                            <input type="email" id="email" name="from_email"
+                                class="contact-input w-full px-4 py-3 rounded-lg" placeholder="Your Email">
+                        </div>
+
+                        <div>
+                            <label for="subject" class="block text-slate-400 mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject"
+                                class="contact-input w-full px-4 py-3 rounded-lg" placeholder="Subject">
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-slate-400 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5"
+                                class="contact-input w-full px-4 py-3 rounded-lg" placeholder="Your Message"></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="btn-primary w-full py-3 rounded-lg font-medium flex items-center justify-center">
+                            Send Message
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thank You Section -->
+    <section id="thankyou" class="py-20 bg-slate-900 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 space-font text-indigo-400">
+                Thank You!
+            </h2>
+            <p class="text-slate-300 text-lg max-w-2xl mx-auto">
+                I appreciate you taking the time to visit my portfolio. I hope you enjoyed exploring my work as much as
+                I enjoyed creating it. Feel free to reach out anytime!
+            </p>
+            <div class="mt-8">
+                <a href="#contact" class="btn-primary px-8 py-3 rounded-md font-medium">
+                    Get in Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Custom Alert Modal -->
+    <div id="custom-alert" style="display: none;"
+        class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
+        <div class="bg-gray-800 text-white p-6 rounded-xl w-full max-w-sm text-center">
+            <div class="text-lg font-bold mb-4">Message from Matilda...</div>
+            <div class="mb-6" id="alert-message"></div>
+            <button onclick="closeCustomAlert()"
+                class="bg-blue-400 hover:bg-blue-500 text-black font-semibold py-2 px-6 rounded-full">
+                OK
+            </button>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-900 border-t border-slate-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <a href="#home" class="text-xl font-bold space-font text-white">
+                        <span class="text-indigo-500"></span>Portfolio
+                    </a>
+                </div>
+
+                <div class="text-slate-400 text-sm">
+                    &copy; 2025 Matilda Ashraf. All rights reserved.
+                </div>
+
+                <div class="mt-4 md:mt-0">
+                    <a href="#home" class="text-slate-400 hover:text-indigo-500 transition-colors" title="Back to top">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="JS/scripts.js"></script>
+</body>
+
+</html>
